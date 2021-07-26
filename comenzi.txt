@@ -1,0 +1,14 @@
+comenzi folosite :
+
+sudo aws configure
+se configureaza linia de comanda cu utilizatorul si regiunea care urmeaza sa fie folosite
+
+aws s3 cp index.html s3://creates3-s3bucket-3x9x6prubb9u/index.html
+aws s3 cp error.html s3://creates3-s3bucket-3x9x6prubb9u/error.html
+adaugarea fisierelor html in s3bucket
+
+aws s3 website s3://my-bucket/ --index-document index.html --error-document 
+bucket ul este configurat pentru a hosta un website
+
+access link:
+http://creates3-s3bucket-3x9x6prubb9u.s3-website-eu-west-1.amazonaws.com/
