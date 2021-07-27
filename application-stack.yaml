@@ -1,0 +1,28 @@
+Resources:
+
+  APIFunction:
+
+    Type: 'AWS::Lambda::Function'
+
+    Properties:
+
+      FunctionName: !Sub 'lambda-${AWS::StackName}'
+
+      Description: Function
+
+      Code:
+
+        S3Bucket: curs-2-aws
+
+        S3Key: index.zip
+
+      Handler: index.upload_file
+
+      Runtime: python3.7
+
+      MemorySize: 1024
+
+      Role: 'arn:aws:iam::678655036159:role/rol_lambda'
+
+      Timeout: 120
+
