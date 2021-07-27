@@ -1,0 +1,3 @@
+In fisierul de configurare a aws lambda s-a configurat o functie in python ce ruleaza in versiunea de python 3.7 aceasta functie este stocata intr-un bukcet de s3 intr-un zip
+Functia in python pirmeste la incpeut 3 parametri idintre care 2 sunt impliciti ; daca obiectul ce urmeaza a fi incarcat are valoarea default atunci acesta va prelua valoarea numelui fisierului;
+Ulterior prin intermediul librariei , functia va incerca sa faca un put in bucket ul de s3; in caz contrar va arunca o eroare
